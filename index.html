@@ -515,9 +515,6 @@
     <script src="js/swiper.min.js"></script>
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
-            // spaceBetween: 20,
-            // slidesPerView: 3,
             grabCursor: true,
             breakpoints: {
                 // when window width is >= 320px
@@ -525,15 +522,6 @@
                     slidesPerView: 1,
                     spaceBetween: 20
                 },
-                // // when window width is >= 480px
-                // 480: {
-                //     slidesPerView: 1,
-                //     spaceBetween: 20
-                // },
-                // 768: {
-                //     slidesPerView: 1,
-                //     spaceBetween: 20
-                // },
                 992: {
                     slidesPerView: 2,
                     spaceBetween: 20
@@ -559,11 +547,6 @@
             (window.pageYOffset > sticky) ?
                 header.classList.add("scroll-header") :
                 header.classList.remove("scroll-header");
-            // if (window.pageYOffset > sticky) {
-            //     header.classList.add("sticky");
-            // } else {
-            //     header.classList.remove("sticky");
-            // }
         }
     </script>
 </body>
