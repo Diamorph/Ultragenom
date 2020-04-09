@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ultragenom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo"></div>
+            <div class="nav-links-container">
+                <div class="dropdown">
+                    <button class="dropbtn">Послуги</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="nav-link">Генетичні тести</a>
+                        <a href="#" class="nav-link">Інше</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Про нас</button>
+                    <div class="dropdown-content">
+                        <a onclick="scrollToAnchor('service')" class="nav-link">Наші послуги</a>
+                        <a onclick="scrollToAnchor('about-us')" class="nav-link">Про нас</a>
+                        <a onclick="scrollToAnchor('team')" class="nav-link">Наша команда</a>
+                        <a onclick="scrollToAnchor('feedbacks')" class="nav-link">Відгуки</a>
+                        <a href="#" class="nav-link">Контакти</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Технологічна вітка</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="nav-link">Контроль якості</a>
+                        <a href="#" class="nav-link">Методи аналізу</a>
+                        <a href="#" class="nav-link">Сертифікати якості</a>
+                        <a href="#" class="nav-link">Клініки-партнери</a>
+                    </div>
+                </div>
+                <a href="#">Контакти</a>
+            </div>
+            <div class="lang-panel">
+                <a class="lang active">UA</a>
+                <a class="lang">RU</a>
+                <a class="lang">EN</a>
+            </div>
+        </div>
+        <div class="header-container-mobile">
+            <div class="logo"></div>
+            <div class="menu-button">
+                <button id="toggle-header-button">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div id="mobile-menu" class="mobile-menu-container">
+        <div class="close-button-container">
+            <button id="close-mobile-menu-button">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-navigation">
+            <div class="dropdown-mobile-container">
+                <div class="dropdown-mobile-button-container">
+                    <button class="dropbtn-mobile">Послуги</button>
+                    <i class="fa fa-chevron-down"></i>
+                    <i class="fa fa-chevron-up"></i>
+                </div>
+                <div class="dropdown-mobile-content">
+                    <a href="#" class="nav-link">Генетичні тести</a>
+                    <a href="#" class="nav-link">Інше</a>
+                </div>
+            </div>
+            <div class="dropdown-mobile-container">
+                <div class="dropdown-mobile-button-container">
+                    <button class="dropbtn-mobile">Про нас</button>
+                    <i class="fa fa-chevron-down"></i>
+                    <i class="fa fa-chevron-up"></i>
+                </div>
+                <div class="dropdown-mobile-content">
+                    <a onclick="scrollToAnchor('service')" class="nav-link">Наші послуги</a>
+                    <a onclick="scrollToAnchor('about-us')" class="nav-link">Про нас</a>
+                    <a onclick="scrollToAnchor('team')" class="nav-link">Наша команда</a>
+                    <a onclick="scrollToAnchor('feedbacks')" class="nav-link">Відгуки</a>
+                    <a href="#" class="nav-link">Контакти</a>
+                </div>
+            </div>
+            <div class="dropdown-mobile-container">
+                <div class="dropdown-mobile-button-container">
+                    <button class="dropbtn-mobile">Технічна вітка</button>
+                    <i class="fa fa-chevron-down"></i>
+                    <i class="fa fa-chevron-up"></i>
+                </div>
+                <div class="dropdown-mobile-content">
+                    <a href="#" class="nav-link">Контроль якості</a>
+                    <a href="#" class="nav-link">Методи аналізу</a>
+                    <a href="#" class="nav-link">Сертифікати якості</a>
+                    <a href="#" class="nav-link">Клініки-партнери</a>
+                </div>
+            </div>
+            <div class="mobile-menu-link">
+                <a href="#" class="dropbtn-mobile">Контакти</a>
+            </div>
+        </nav>
+        <div class="lang-panel">
+            <a class="lang active">UA</a>
+            <a class="lang">RU</a>
+            <a class="lang">EN</a>
+        </div>
+    </div>
+    <div class="main-background">
+        <div class="main-content container">
+            <h1 class="main-title">Ultragenom</h1>
+            <div class="main-text">
+                Ми надаємо лікарям та їх пацієнтам всебічні та якісні інструменти та ресурси для генетичної діагностики. Роблячи це, ми надаємо можливості для цілеспрямованого лікування та індивідуальної допомоги пацієнтам.
+            </div>
+        </div>
+    </div>
+        <section class="our-services-container container">
+                <h2 class="title" id="service">Наші послуги</h2>
+                <div class="our-services">
+                    <div class="service">
+                        <div class="service-content">
+                            <img class="service-img" src="img/services/service-1.svg">
+                            <div class="service-text">
+                                Проведення передімплантаційного (PGT-A) аналізу ембріонів при IVF
+                            </div>
+                        </div>
+                        <div class="service-read-more">Читати більше</div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <img class="service-img" src="img/services/service-2.svg">
+                            <div class="service-text">
+                                ПЛР-аналіз крові батьків для визначення генетичних мутацій, здатних вплинути на життєздатність плоду
+                            </div>
+                        </div>
+                        <div class="service-read-more">Читати більше</div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <img class="service-img" src="img/services/service-3.svg">
+                            <div class="service-text">
+                                Аналіз ДНК на наявність генетичних мутацій та спадкових захворювань
+                            </div>
+                        </div>
+                        <div class="service-read-more">Читати більше</div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <img class="service-img" src="img/services/service-4.svg">
+                            <div class="service-text">
+                                Аналіз загальної ДНК з біопсій для діагностики онкозахворювань
+                            </div>
+                        </div>
+                        <div class="service-read-more">Читати більше</div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <img class="service-img" src="img/services/service-5.svg">
+                            <div class="service-text">
+                                Персоналізована генетична діагностика
+                            </div>
+                        </div>
+                        <div class="service-read-more">Читати більше</div>
+                    </div>
+                </div>
+            </section>
+    <div class="main-page-background">
+        <section class="about-us-container container">
+            <h2 class="title" id="about-us">Про нас</h2>
+            <div class="about-us-content">
+                <div class="about-us-text">
+                    Компанія «Ультрагеном» створена в 2019 р. як лабораторія молекулярно-генетичного аналізу, що базується на новітніх досягненнях в області генетичної діагностики та відповідає стандартам якості, які пред’являються до лабораторій такого класу.
+                    Лабораторія «Ультрагеном» базується в Києві, Україна. Ми надаємо послуги генетичної діагностики найвищої якості та їх клінічну інтерпретацію.
+                </div>
+                <div class="about-us-img-container">
+<!--                    <img src="img/team/team-photo.svg">-->
+                </div>
+            </div>
+            <div class="about-us-content reversed">
+                <div class="about-us-text">
+                    Ми робимо високоякісні генетичні тести для глобальної клінічної спільноти.
+                    Поєднуючи сучасний лабораторний процес, новітні технології, ІТ, розширені інструменти та методи аналізу даних, роботу професіоналів світового класу та цілісний підхід до клієнтів, ми вносимо свій вклад в створення системи охорони здоров’я завтрашнього дня.
+                </div>
+                <div class="about-us-img-container">
+<!--                    <img class="about-us-img" src="img/about-us/no-img.svg">-->
+                </div>
+            </div>
+        </section>
+        <section class="team-container container">
+            <h2 class="title" id="team">Наша команда</h2>
+            <div class="team-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus tristique vulputate ultrices ut mauris tellus at.
+                Posuere sollicitudin odio tellus elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+            </div>
+            <div class="team-member-container">
+                <div class="team-member">
+                    <div class="team-photo-container">
+                        <img src="img/team/team-photo.svg">
+                    </div>
+                    <div class="team-member-content">
+                        <div class="team-member-name">
+                            Lorem Ipsum
+                        </div>
+                        <div class="team-member-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo-container">
+                        <img src="img/team/team-photo.svg">
+                    </div>
+                    <div class="team-member-content">
+                        <div class="team-member-name">
+                            Lorem Ipsum
+                        </div>
+                        <div class="team-member-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo-container">
+                        <img src="img/team/team-photo.svg">
+                    </div>
+                    <div class="team-member-content">
+                        <div class="team-member-name">
+                            Lorem Ipsum
+                        </div>
+                        <div class="team-member-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback-container">
+    <div class="container">
+        <h2 class="title" id="feedbacks">Відгуки</h2>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+<!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feedback-content-container">
+                        <div class="feedback-title">
+                            <div class="feedback-img">
+                                <!--                                    <img src="img/about-us/no-img.svg" width="60" height="60">-->
+                            </div>
+                            <div class="feedback-name">
+                                Vlad
+                            </div>
+                        </div>
+                        <div class="feedback-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Faucibus tristique vulputate ultrices ut mauris tellus at.
+                            Posuere sollicitudin odio tellus elit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-inner-container">
+            <div class="contacts-container">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3571.0905658145834!2d30.524081823468528!3d50.44720679242417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce53dbbdc391%3A0x71aa7c1dce2058dc!2z0JPQvtGC0LXQu9GMINCj0LrRgNCw0ZfQvdCw!5e0!3m2!1suk!2sua!4v1585950416849!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="contacts-panel">
+                    <div class="contacts-mobile">
+                        <h4 class="contacts-title">Контактний телефон</h4>
+                        <span class="contacts-content">
+                            <img src="img/contacts/phone.svg">
+                            <a href="tel:0985778479">0985778479</a>
+                        </span>
+
+                    </div>
+                    <div class="email">
+                        <h4 class="contacts-title">Email</h4>
+                        <span class="contacts-content">
+                            <img src="img/contacts/mail.svg">
+                            <a href="mailto:test@gmail.com">test@gmail.com</a>
+                        </span>
+                    </div>
+                    <div class="social">
+                        <h4 class="contacts-title">Ми у соцмережах</h4>
+                        <span class="contacts-content">
+                            <img src="img/contacts/web.svg">
+                            <a href="https://google.com.ua" target="_blank">google.com</a>
+                        </span>
+
+                    </div>
+                    <div class="address">
+                        <h4 class="contacts-title">Адреса</h4>
+                        <span class="contacts-content">
+                            <img src="img/contacts/pin.svg">
+                            <a href="https://www.google.com.ua/maps/place/%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0/@50.4480402,30.5257243,15.81z/data=!4m16!1m7!3m6!1s0x40d4cf4ee15a4505:0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!3b1!8m2!3d50.4501!4d30.5234!3m7!1s0x0:0x71aa7c1dce2058dc!5m2!4m1!1i2!8m2!3d50.448603!4d30.52724" target="_blank">м. Київ, бул. Лесі Українки 23</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="line-footer"></div>
+            <div class="footer-info-container">
+                <div class="footer-partners-info">
+                    <div class="footer-logo">
+                        <div class="logo"></div>
+                        <div class="logo-name">Ultragenom</div>
+                    </div>
+                    <div class="footer-our-partners">
+                        <div class="partners-text">Наші партнери:</div>
+                        <div class="partners-links">
+                            <a href="https://google.com.ua" target="_blank">
+                                <img alt="Qries" src="https://www.qries.com/images/banner_logo.png" width="50" height="50">
+                            </a>
+                            <a href="https://google.com.ua" target="_blank">
+                                <img alt="Qries" src="https://www.qries.com/images/banner_logo.png" width="50" height="50">
+                            </a>
+                            <a href="https://google.com.ua" target="_blank">
+                                <img alt="Qries" src="https://www.qries.com/images/banner_logo.png" width="50" height="50">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="license">Ліцензія №0703/06-М от 07.03.2017</div>
+                </div>
+                <div class="footer-links">
+                    <a onclick="scrollToAnchor('service')">Послуги</a>
+                    <a onclick="scrollToAnchor('about-us')">Про нас</a>
+                    <a class="link">Технологічна вітка</a>
+                    <a class="link">Контакти</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright">
+                    © 2020 Ultragenom. All rights reserved.
+                </div>
+                <div class="lang-panel">
+                    <a class="lang active">UA</a>
+                    <a class="lang">RU</a>
+                    <a class="lang">EN</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            // spaceBetween: 20,
+            // slidesPerView: 3,
+            grabCursor: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // // when window width is >= 480px
+                // 480: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 20
+                // },
+                // 768: {
+                //     slidesPerView: 1,
+                //     spaceBetween: 20
+                // },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+        })
+    </script>
+<!--    only for main page-->
+    <script>
+        window.onscroll = function() {scrollHeader()};
+        var header = document.getElementsByTagName('header')[0];
+        var sticky = header.offsetTop;
+        function scrollHeader() {
+            (window.pageYOffset > sticky) ?
+                header.classList.add("scroll-header") :
+                header.classList.remove("scroll-header");
+            // if (window.pageYOffset > sticky) {
+            //     header.classList.add("sticky");
+            // } else {
+            //     header.classList.remove("sticky");
+            // }
+        }
+    </script>
+</body>
+</html>
